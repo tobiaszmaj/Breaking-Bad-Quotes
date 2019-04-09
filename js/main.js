@@ -30,7 +30,10 @@
     const btn = document.getElementById('generate-btn');
 
     btn.addEventListener('click', function () {
-        let random = Math.random();
+        let random = Math.floor(Math.random() * quotes.length);
+
+        document.getElementById('quote').textContent = quotes[random].quote;
+        document.querySelector('.author').textContent = quotes[random].author;
     });
 
 })();
