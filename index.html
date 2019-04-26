@@ -16,21 +16,84 @@
 
 <body>
 
-    <div class="conainer">
-        <div class="row max-height align-items-center">
-            <div class="col-11 mx-auto col-md-6 quote-container p-5">
-                <button class="btn-outline-primary text-capitalize my-4 d-block mx-auto" id="generate-btn">Generate
-                    quote</button>
-                <h3 class="text-muted"><span class="quote-icon mr-3"><i class="fas fa-quote-left fa-3x"></i></span><span
-                        id="quote">Lorem
-                        ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor
-                        labore, reprehenderit
-                        ipsum aspernatur blanditiis maiores.
-                    </span></i></span></h3>
-                <h5 class="text-right text-capitalize author">-<span class="quote-author ml-3 ">author</span></h5>
+    <div class="wrapper">
+
+        <!-- Title page -->
+        <div id="intro_page">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <p class="title">BREAKING BAD QUOTE MACHINE</p>
+            <div id="buttons1">
+                <div>
+                    <img src="img/drugs.png" id="drugs_1" alt="drugs icon">
+                    <img src="img/drugs.png" id="drugs_2" alt="drugs icon" onclick="combine()">
+                    <p class="button_name_1">quote</p>
+                </div>
+                <div>
+                    <img src="img/money.png" id="money_1" alt="money icon" onclick="mix()">
+                    <img src="img/money.png" id="money_2" alt="money icon" onclick="combineMix()">
+                    <p class="button_name_2">mix</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action page -->
+        <div id="action_page">
+            <img src="img/logo.svg" alt="logo" class="logo2">
+            <div id="buttons2">
+                <img src="img/drugs.png" id="drugs_3" alt="drugs icon">
+                <img src="img/money.png" id="money_3" alt="money icon">
+                <img src="img/drugs.png" id="drugs_4" alt="drugs icon">
+                <img src="img/money.png" id="money_4" alt="money icon">
+            </div>
+        </div>
+
+        <!-- Grid for one character -->
+        <div id="grid_one">
+            <div id="mono_image">
+                <img src="" id="image" alt="">
+            </div>
+            <div id="mono_quote">
+                <img src="img/torn_sheet.png" id="sheet" alt="torn sheet">
+                <p id="quote"></p>
+            </div>
+        </div>
+
+        <!-- Grid for two characters -->
+        <div id="grid_two">
+            <div id="stereo_1">
+                <div id="character_1">
+                    <img src="" id="image_1" alt="">
+                </div>
+                <div id="torn_sheet_1">
+                    <img src="img/torn_sheet_2.png" id="sheet_1" alt="torn sheet">
+                    <p id="quote_1">
+                    </p>
+                </div>
+            </div>
+            <div id="stereo_2">
+                <div id="character_2">
+                    <img src="" id="image_2" alt="">
+                </div>
+                <div id="torn_sheet_2">
+                    <img src="img/torn_sheet.png" id="sheet_2" alt="torn sheet">
+                    <p id="quote_2">
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Landscape mobile -->
+    <div class="landscape">
+        <img src="img/logo.svg" alt="logo" class="logo_ls">
+        <p class="instruct">Rotate to portrait/enlarge the window</p>
+    </div>
+
+    <!-- Caption -->
+    <div id="caption">
+        <p>Designed and coded with passion by <a href="https://github.com/tobiaszmaj">Tobiasz Maj</a></p>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
