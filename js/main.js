@@ -92,8 +92,8 @@ function switchSoloDuo(mode) {
     const activeForDuo = isSolo ? "inactive" : "active";
     const inlineForSolo = isSolo ? "inline" : "none";
     const inlineForDuo = isSolo ? "none" : "inline";
-    soloButton.src = "images/solo " + activeForSolo + " button.png";
-    duoButton.src = "images/duo " + activeForDuo + " button.png";
+    soloButton.src = "img/solo-active.png" + activeForSolo + "duo-inactive.png";
+    duoButton.src = "img/duo-active.png " + activeForDuo + "solo-inactive.png";
     firstIcon1.style.display = inlineForSolo;
     secondIcon1.style.display = inlineForSolo;
     firstIcon2.style.display = inlineForDuo;
