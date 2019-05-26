@@ -7,7 +7,7 @@ body {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: center;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 #quote {
-    font-size: 30px;
+    font-size: 28px;
     color: #000;
     position: absolute;
     top: 50%;
@@ -338,7 +338,7 @@ body {
 
 /*
 
----------------->    MOBILE I - portrait  <----------------
+---------------->    Mobile version  <----------------
 
 */
 
@@ -347,7 +347,8 @@ body {
         min-height: 100%;
         background-image: url("../img/background.png");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
+        background-position: center;
     }
 
     #intro_page {
@@ -373,40 +374,40 @@ body {
     /* Text */
 
     .title {
-        font-size: 22px;
-        color: #448002;
+        font-size: 30px;
+        color: #fff;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
         text-align: center;
         position: absolute;
         margin: 0 -50% 0 0;
-        top: 43%;
+        top: 0%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     #buttons1 p {
-        font-size: 16px;
-        color: #241F19;
+        font-size: 20px;
+        color: #fff;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
         margin-bottom: 0;
         position: absolute;
     }
 
     .button_name_1 {
-        bottom: 5%;
-        left: 50%;
+        bottom: 0;
+        left: 35.5%;
         transform: translateX(-210%);
     }
 
     .button_name_2 {
-        bottom: 5%;
-        right: 50%;
+        bottom: 0;
+        right: 36%;
         transform: translateX(+255%);
     }
 
     #quote {
         font-size: 18px;
-        color: #3A3836;
+        color: #000;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -418,7 +419,7 @@ body {
     #quote_1,
     #quote_2 {
         font-size: 16px;
-        color: #3A3836;
+        color: #000;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -429,9 +430,41 @@ body {
 
     #caption p {
         font-size: 14px;
-        color: #73706C;
+        color: #fff;
         margin: 0;
         text-align: left;
+    }
+
+    #solo_label {
+        color: #fff;
+        position: fixed;
+        width: 5.5rem;
+        top: 6rem;
+        right: -1.2rem;
+    }
+
+    #duo_label {
+        color: #fff;
+        position: fixed;
+        width: 5.5rem;
+        top: 13rem;
+        right: -1.2rem;
+    }
+
+    .quote_label {
+        color: #fff;
+        position: fixed;
+        width: 5.5rem;
+        top: 6rem;
+        left: 1.8rem;
+    }
+
+    .mix_label {
+        color: #fff;
+        position: fixed;
+        width: 5.5rem;
+        top: 13rem;
+        left: 2.3rem;
     }
 
     /* Buttons */
@@ -450,7 +483,7 @@ body {
         max-width: 5.5rem;
         min-width: 4.5rem;
         width: 20vw;
-        top: 3.5rem;
+        top: 8rem;
         right: 1rem;
     }
 
@@ -460,107 +493,70 @@ body {
     }
 
     #duo_button:active {
-        top: 3.6rem;
+        top: 8.1rem;
         right: 0.9rem;
     }
 
-    #coffee_1,
-    #coffee_2 {
+    #first_1,
+    #first_2 {
         position: absolute;
-        width: 4rem;
+        width: 6rem;
         bottom: 15%;
-        left: 50%;
+        left: 38%;
         transform: translateX(-150%);
     }
 
-    #pie_1,
-    #pie_2 {
+    #second_1,
+    #second_2 {
         position: absolute;
-        width: 4rem;
+        width: 6rem;
         bottom: 15%;
-        right: 50%;
+        right: 42%;
         transform: translateX(+150%);
     }
 
-    #coffee_1:active,
-    #coffee_2:active {
+    #first_1:active,
+    #first_2:active {
         bottom: 14.5%;
-        left: 50.5%;
+        left: 38.5%;
     }
 
-    #pie_1:active,
-    #pie_2:active {
+    #second_1:active,
+    #second_2:active {
         bottom: 14.5%;
-        right: 49.5%;
+        right: 41.5%;
     }
 
-    #buttons2 {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #coffee_3,
-    #coffee_4 {
-        position: absolute;
-        top: 1rem;
-        right: auto;
-        left: 50%;
-        transform: translateX(-105%);
-        max-width: 4.5rem;
-        min-width: 4rem;
-        width: 18vw;
-    }
-
-    #pie_3,
-    #pie_4 {
-        position: absolute;
-        top: 1rem;
-        right: 50%;
-        transform: translateX(+105%);
-        max-width: 4.5rem;
-        min-width: 4rem;
-        width: 18vw;
-    }
-
-    #coffee_3:active,
-    #coffee_4:active {
-        top: 1.1rem;
-        right: none;
-        left: 51%;
-    }
-
-    #pie_3:active,
-    #pie_4:active {
-        top: 1.1rem;
-        right: 49%;
-    }
-
-    #facebook,
-    #twitter {
+    #first_3,
+    #first_4 {
         position: fixed;
-        width: 2rem;
+        top: 1rem;
+        left: 1rem;
+        max-width: 4.5rem;
+        min-width: 4rem;
+        width: 20vw;
     }
 
-    #facebook {
-        right: 4rem;
-        bottom: 1rem;
+    #second_3,
+    #second_4 {
+        position: fixed;
+        top: 8rem;
+        left: 1rem;
+        max-width: 4.5rem;
+        min-width: 4rem;
+        width: 20vw;
     }
 
-    #twitter {
-        right: 1rem;
-        bottom: 1rem;
+    #first_3:active,
+    #first_4:active {
+        top: 1.1rem;
+        left: 1.1rem;
     }
 
-    #facebook:active {
-        right: 3.95rem;
-        bottom: 0.95rem;
-    }
-
-    #twitter:active {
-        right: 0.95rem;
-        bottom: 0.95rem;
+    #second_3:active,
+    #second_4:active {
+        top: 1.1rem;
+        right: 1.1rem
     }
 
     /* Solo mode */
@@ -569,7 +565,7 @@ body {
         position: absolute;
         width: 100vw;
         height: 90vw;
-        top: 43%;
+        top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
@@ -603,6 +599,7 @@ body {
     }
 
     #sheet {
+        height: 25%;
         width: 120vw;
         min-width: auto;
         display: block;
@@ -613,13 +610,13 @@ body {
     #duo_1,
     #duo_2 {
         width: 100vw;
-        height: 60vw;
+        height: 62.5vw;
         min-height: 13rem;
     }
 
     #duo_1 {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: auto;
         bottom: auto;
         transform: translateY(-50%);
@@ -628,7 +625,7 @@ body {
 
     #duo_2 {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: auto;
         bottom: auto;
         right: auto;
@@ -643,14 +640,14 @@ body {
 
     #torn_sheet_1 {
         left: 50%;
-        top: 0;
+        top: 10%;
         bottom: initial;
         transform: translateX(-50%) translateY(-96%);
     }
 
     #torn_sheet_2 {
         left: 50%;
-        bottom: 0;
+        bottom: -50%;
         transform: translateX(-50%) translateY(+75%);
     }
 
@@ -658,23 +655,24 @@ body {
     #image_2 {
         position: absolute;
         display: block;
-        height: 60vw;
-        min-height: 13rem;
+        height: 11rem;
+        min-height: 11rem;
         margin: auto;
     }
 
     #image_1 {
-        left: 3vw;
+        left: 19vw;
     }
 
     #image_2 {
-        right: 3vw;
+        right: 19vw;
+        bottom: -50%;
     }
 
     #sheet_1,
     #sheet_2 {
         display: block;
-        width: 110vw;
+        width: 80vw;
         min-width: none;
     }
 
@@ -685,553 +683,6 @@ body {
         left: 0.5rem;
         border-top: 1px solid #73706C;
         width: 14rem;
-    }
-
-}
-
-/*
-
----------------->    MOBILE II  <----------------
-
-*/
-
-@media only screen and (max-width: 767px) and (min-width: 501px) {
-    body {
-        min-height: 100%;
-        background-image: url("../img/background.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        position: center;
-        overflow: hidden;
-    }
-
-    #intro_page {
-        position: absolute;
-        height: 25rem;
-        width: 90vw;
-        min-height: auto;
-        max-height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    /* text */
-
-    .title {
-        font-size: 29px;
-        color: #448002;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
-        text-align: center;
-        position: absolute;
-        margin: 0 -50% 0 0;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .button_name_1 {
-        bottom: 6%;
-        left: 50%;
-        transform: translateX(-260%);
-    }
-
-    .button_name_2 {
-        bottom: 6%;
-        right: 50%;
-        transform: translateX(+325%);
-    }
-
-    #quote_1,
-    #quote_2 {
-        font-size: 16px;
-        color: #3A3836;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 -40% 0 0;
-        transform: translateX(-50%) translateY(-50%);
-        text-align: center;
-    }
-
-    /* Buttons */
-
-    #solo_button {
-        position: fixed;
-        width: 5.5rem;
-        top: 1rem;
-        right: 1rem;
-    }
-
-    #duo_button {
-        position: fixed;
-        width: 5.5rem;
-        top: 3.5rem;
-        right: 1rem;
-    }
-
-    #solo_button:active {
-        top: 1.1rem;
-        right: 0.9rem;
-    }
-
-    #duo_button:active {
-        top: 3.6rem;
-        right: 0.9rem;
-    }
-
-    #coffee_1,
-    #coffee_2 {
-        position: absolute;
-        width: 5rem;
-        bottom: 15%;
-        left: 50%;
-        transform: translateX(-170%);
-    }
-
-    #pie_1,
-    #pie_2 {
-        position: absolute;
-        width: 5rem;
-        bottom: 15%;
-        right: 50%;
-        transform: translateX(+170%);
-    }
-
-    #coffee_1:active,
-    #coffee_2:active {
-        bottom: 14.5%;
-        left: 50.5%;
-    }
-
-    #pie_1:active,
-    #pie_2:active {
-        bottom: 14.5%;
-        right: 49.5%;
-    }
-
-    #coffee_3,
-    #coffee_4 {
-        position: fixed;
-        top: 6rem;
-        right: 1rem;
-    }
-
-    #pie_3,
-    #pie_4 {
-        position: fixed;
-        top: 11rem;
-        right: 1rem;
-    }
-
-    #coffee_3:active,
-    #coffee_4:active {
-        top: 6.1rem;
-        right: 0.9rem;
-    }
-
-    #pie_3:active,
-    #pie_4:active {
-        top: 11.1rem;
-        right: 0.9rem;
-    }
-
-    #facebook {
-        right: 4.5rem;
-        bottom: 3rem;
-    }
-
-    #twitter {
-        right: 1rem;
-        bottom: 3rem;
-    }
-
-    #facebook:active {
-        right: 4.45rem;
-        bottom: 2.95rem;
-    }
-
-    #twitter:active {
-        right: 0.95rem;
-        bottom: 2.95rem;
-    }
-
-    /* Solo mode */
-
-    #grid_one {
-        position: absolute;
-        width: 70vw;
-        height: 60vh;
-        top: 47%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    #solo_image {
-        position: absolute;
-        width: 100vw;
-        height: 60vh;
-        top: 50%;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        z-index: -1;
-    }
-
-    #solo_quote {
-        position: absolute;
-        top: initial;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        height: 60vh;
-        min-height: auto;
-    }
-
-    #sheet {
-        width: 50vw;
-        min-width: 30rem;
-        display: block;
-    }
-
-    /* Duo mode */
-
-    #duo_1,
-    #duo_2 {
-        width: 70vw;
-        height: 35vw;
-        min-height: 20rem;
-    }
-
-    #duo_1 {
-        position: absolute;
-        bottom: 10vh;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #duo_2 {
-        position: absolute;
-        top: 7vh;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-
-    #torn_sheet_1,
-    #torn_sheet_2 {
-        position: absolute;
-    }
-
-    #torn_sheet_1 {
-        left: 50%;
-        bottom: 5vh;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #torn_sheet_2 {
-        left: 50%;
-        bottom: 5vh;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #image_1,
-    #image_2 {
-        display: block;
-        height: 32vw;
-        min-height: 18rem;
-        margin: 0 auto;
-    }
-
-    #sheet_1,
-    #sheet_2 {
-        display: block;
-        width: 38vw;
-        min-width: 22rem;
-    }
-
-    #caption {
-        display: none;
-        position: absolute;
-        bottom: 0.3rem;
-        right: 1rem;
-        border-top: 1px solid #73706C;
-        width: 14rem;
-    }
-
-}
-
-
-/*
-
----------------->    TABLET   <----------------
-
-*/
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-    body {
-        background-size: 100%;
-    }
-
-    #intro_page {
-        position: absolute;
-        height: 25rem;
-        width: 70vw;
-        min-height: auto;
-        max-height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    /* text */
-
-    .title {
-        font-size: 32px;
-        color: #448002;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
-        text-align: center;
-        position: absolute;
-        margin: 0 -50% 0 0;
-        top: 47%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .button_name_1 {
-        bottom: 6%;
-        left: 50%;
-        transform: translateX(-260%);
-    }
-
-    .button_name_2 {
-        bottom: 6%;
-        right: 50%;
-        transform: translateX(+325%);
-    }
-
-    #quote_1,
-    #quote_2 {
-        font-size: 16px;
-        color: #3A3836;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 -40% 0 0;
-        transform: translateX(-50%) translateY(-50%);
-        text-align: center;
-    }
-
-    /* buttons */
-
-    #coffee_1,
-    #coffee_2 {
-        position: absolute;
-        width: 5rem;
-        bottom: 15%;
-        left: 50%;
-        transform: translateX(-170%);
-    }
-
-    #pie_1,
-    #pie_2 {
-        position: absolute;
-        width: 5rem;
-        bottom: 15%;
-        right: 50%;
-        transform: translateX(+170%);
-    }
-
-    #coffee_1:active,
-    #coffee_2:active {
-        bottom: 14.5%;
-        left: 50.5%;
-    }
-
-    #pie_1:active,
-    #pie_2:active {
-        bottom: 14.5%;
-        right: 49.5%;
-    }
-
-    #coffee_3,
-    #coffee_4 {
-        position: fixed;
-        top: 7rem;
-        right: 2rem;
-    }
-
-    #pie_3,
-    #pie_4 {
-        position: fixed;
-        top: 12rem;
-        right: 2rem;
-    }
-
-    #coffee_3:active,
-    #coffee_4:active {
-        top: 7.1rem;
-        right: 1.9rem;
-    }
-
-    #pie_3:active,
-    #pie_4:active {
-        top: 12.1rem;
-        right: 1.9rem;
-    }
-
-    /* Solo mode */
-
-    #grid_one {
-        position: absolute;
-        width: 70vw;
-        height: 60vh;
-        top: 47%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    #solo_image {
-        position: absolute;
-        width: 100vw;
-        height: 60vh;
-        top: 50%;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        z-index: -1;
-    }
-
-    #solo_quote {
-        position: absolute;
-        top: initial;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        height: 60vh;
-        min-height: auto;
-    }
-
-    #sheet {
-        width: 50vw;
-        min-width: 35rem;
-        display: block;
-    }
-
-    /* Duo mode */
-
-    #duo_1,
-    #duo_2 {
-        width: 45vw;
-        height: 35vw;
-        min-height: 27rem;
-    }
-
-    #duo_1 {
-        position: absolute;
-        bottom: 8vh;
-        left: 3vw;
-    }
-
-    #duo_2 {
-        position: absolute;
-        top: 5vh;
-        left: 46vw;
-        z-index: -1;
-    }
-
-    #torn_sheet_1,
-    #torn_sheet_2 {
-        position: absolute;
-    }
-
-    #torn_sheet_1 {
-        left: 50%;
-        bottom: 5vh;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #torn_sheet_2 {
-        left: 50%;
-        bottom: 5vh;
-        transform: translateX(-50%) translateY(+50%);
-    }
-
-    #image_1,
-    #image_2 {
-        display: block;
-        height: 32vw;
-        min-height: 25rem;
-        margin: 0 auto;
-    }
-
-    #sheet_1,
-    #sheet_2 {
-        display: block;
-        width: 38vw;
-        min-width: 22rem;
-    }
-
-}
-
-/*
-
----------------->    MOBILE - landscape  <----------------
-
-*/
-
-@media only screen and (max-height: 500px) and (orientation: landscape) {
-    body {
-        min-height: 100%;
-        background-image: url("../img/background.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        position: center;
-        overflow: hidden;
-    }
-
-    .wrapper {
-        display: none;
-    }
-
-    #caption {
-        visibility: hidden;
-    }
-
-    .landscape {
-        display: inline;
-        position: absolute;
-        width: 90vw;
-        height: 15rem;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    .instruct {
-        font-size: 2rem;
-        color: #448002;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
-        text-align: center;
-        position: absolute;
-        margin: 0 -50% 0 0;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
 }
